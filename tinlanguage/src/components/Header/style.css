@@ -1,0 +1,23 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #464c57;
+
+}
+
+.header__logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+
+.header__icon {
+  padding: 20px;/*  espacer */
+}
+
+.header__icon:hover{
+  color: grey;
+  opacity:1;
+
+}
