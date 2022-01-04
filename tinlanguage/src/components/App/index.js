@@ -1,30 +1,23 @@
-import Reacr from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from '../Header';
 import TinCard from '../TinCard';
-import Buttons  from '../Buttons';
+import Buttons from '../Buttons';
+import Chats from '../Chats/index'
 import './style.css';
 
 function App() {
   return (
     <div className="App">
-     < Router>
-      <Switch>
-        <Route path="/chat" >
-        <h1> I am a chat </h1>
-      </Route>
-     </Switch>
-      <Header />
-      <TinCard />
-      <Buttons />
-     
-      </ Router>
-  
+      <Router>
+        <Header />
+        <TinCard />
+        <Buttons />
+        < Routes>
+          <Route exact path="/chat" component={Chats} >     </Route>   
+        </Routes>
+      </Router> 
     </div>
   );
 }
