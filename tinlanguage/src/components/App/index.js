@@ -10,12 +10,13 @@ import './style.css';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header />
+     {/* <Header /> */}
+      <Router> 
+     <Header /> 
         <TinCard />
         <Buttons />
         < Routes>
-          <Route exact path="/chat" component={Chats} >     </Route>   
+          <Route exact path="/chat" component={Chats} > </Route>   
         </Routes>
       </Router> 
     </div>
